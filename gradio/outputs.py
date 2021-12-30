@@ -288,7 +288,7 @@ class Video(OutputComponent):
             y = output_file_name
         return {
             "name": os.path.basename(y),
-            "data": processing_utils.encode_file_to_base64(y)
+            "data": processing_utils.encode_url_to_base64(y) #encode_file_to_base64
         }
 
     def deserialize(self, x):
